@@ -177,7 +177,7 @@ def onMouseMove(x, y):
     light.centerX = x
     light.centerY = y
     
-# Moves a copy of the room infront of the flashlight to make them appear gone
+# Moves a copy of the room infront of the flashlight
 def onKeyPress(key):
     if (key == 'up'):
         copy1.visible = True
