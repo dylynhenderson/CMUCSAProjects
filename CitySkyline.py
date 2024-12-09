@@ -1,0 +1,211 @@
+# -Background
+# Sky
+Rect(0,0,400,400,fill=gradient('black','midnightBlue', start='top'))
+# Stars
+Circle(10,124,1,fill=('white'))
+Circle(165,143,1,fill=('white'))
+Circle(342,48,1,fill=('white'))
+Circle(154,31,1,fill=('white'))
+Circle(142,84,1,fill=('white'))
+Circle(231,57,1,fill=('white'))
+Circle(276,9,1,fill=('white'))
+Circle(300,82,1,fill=('white'))
+Circle(380,103,1,fill=('white'))
+# Star Glow
+Circle(10,124,2,fill=('white'), opacity=30)
+Circle(165,143,2,fill=('white'), opacity=30)
+Circle(342,48,2,fill=('white'), opacity=30)
+Circle(154,31,2,fill=('white'), opacity=30)
+Circle(142,84,2,fill=('white'), opacity=30)
+Circle(231,57,2,fill=('white'), opacity=30)
+Circle(276,9,2,fill=('white'), opacity=30)
+Circle(300,82,2,fill=('white'), opacity=30)
+Circle(380,103,2,fill=('white'), opacity=30)
+# Constellation | Scorpion
+# Stars
+Circle(23,20,1.4,fill=('white'))
+Circle(39,83,1.4,fill=('white'))
+Circle(83,39,1.4,fill=('white'))
+Circle(102,53,1.4,fill=('white'))
+Circle(53,42,1.4,fill=('white'))
+# Star Glow
+Circle(23,20,2.5,fill=('white'), opacity=30)
+Circle(39,83,2.5,fill=('white'), opacity=30)
+Circle(83,39,2.5,fill=('white'), opacity=30)
+Circle(102,53,2.5,fill=('white'), opacity=30)
+Circle(53,42,2.5,fill=('white'), opacity=30)
+# Connectors
+Line(23,20,53,42,fill='white', lineWidth=0.8)
+Line(39,83,53,42,fill='white', lineWidth=0.8)
+Line(83,39,53,42,fill='white', lineWidth=0.8)
+Line(83,39,102,53,fill='white', lineWidth=0.8)
+# Connectors Glow
+Line(23,20,53,42,fill='white', lineWidth=1.4, opacity=20)
+Line(39,83,53,42,fill='white', lineWidth=1.4, opacity=30)
+Line(83,39,53,42,fill='white', lineWidth=1.4, opacity=30)
+Line(83,39,102,53,fill='white', lineWidth=2, opacity=30)
+# -Skyline | Left to Right
+# Building 2 - NEWS Station
+Rect(20,100,130,310,fill=rgb(70,70,70), borderWidth=2, border=rgb(40,40,40))
+# Windows
+Line(40, 150, 40, 400, dashes=(10, 10), lineWidth=22, fill=rgb(241, 247, 49))
+Line(80, 150, 80, 400, dashes=(10, 10), lineWidth=22, fill=rgb(241, 247, 49))
+Line(120, 150, 120, 400, dashes=(10, 10), lineWidth=22, fill=rgb(241, 247, 49))
+# Dish
+Line(115,100,115,90,lineWidth=4,fill=rgb(40,40,40))
+Oval(115,80,80,28,fill=rgb(55,55,55), borderWidth=2, border=rgb(40,40,40), rotateAngle=18)
+Line(115,80,120,65,lineWidth=5,fill=rgb(75,75,75))
+Line(120,65,125,50,lineWidth=1.6,fill=rgb(75,75,75))
+Circle(125,50,2,fill=rgb(75,75,75))
+# Antena Thingys
+Line(30,100,30,92,lineWidth=5,fill=rgb(75,75,75))
+Line(30,92,30,84,lineWidth=1.6,fill=rgb(75,75,75))
+Circle(30,84,2,fill=rgb(75,75,75)) 
+
+Line(40,100,40,85,lineWidth=5,fill=rgb(75,75,75))
+Line(40,85,40,70,lineWidth=1.6,fill=rgb(75,75,75))
+Circle(40,70,2,fill=rgb(75,75,75))
+
+Line(50,100,50,75,lineWidth=5,fill=rgb(75,75,75))
+Line(50,75,50,50,lineWidth=1.6,fill=rgb(75,75,75))
+Circle(50,50,2,fill=rgb(75,75,75))
+# Sign
+Label('New News',87, 122, font='grenze', size=30, fill='white')
+Label('New News',85, 120, font='grenze', size=30, bold=True)
+
+# Building 1
+Rect(0,200,60,310,fill=rgb(70,70,70), borderWidth=2, border=rgb(40,40,40))
+# Windows
+Line(30, 210, 30, 400, dashes=(10, 20), lineWidth=40, fill=rgb(241, 247, 49))
+# Building 5
+Rect(240,130,130,310,fill=rgb(70,70,70), borderWidth=2, border=rgb(40,40,40))
+# Windows
+Line(285, 150, 285, 400, dashes=(10, 10), lineWidth=22, fill=rgb(241, 247, 49))
+Line(345, 150, 345, 400, dashes=(10, 10), lineWidth=22, fill=rgb(241, 247, 49))
+Rect(267, 164, 94, 60,fill=rgb(70,70,70))
+# Door
+Rect(300, 170, 30, 40, fill=gradient('lightBlue', 'lightBlue','lightBlue','lightBlue','lightBlue', 'white', start='left-top'), border=rgb(40,40,40))
+# Balcony
+Rect(285, 210, 60, 10, fill='red')
+Rect(285, 190, 60, 4, fill='red')
+Line(285, 190, 285, 210, fill='red', lineWidth=0.8)
+Line(345, 190, 345, 210, fill='red', lineWidth=0.8)
+Line(295, 190, 295, 210, fill='red')
+Line(305, 190, 305, 210, fill='red')
+Line(315, 190, 315, 210, fill='red')
+Line(325, 190, 325, 210, fill='red')
+Line(335, 190, 335, 210, fill='red')
+Line(285, 220, 285, 253, fill='red')
+# Sign
+Line(275, 102, 355, 102, lineWidth=3, fill='white')
+Line(285, 102, 285, 130, lineWidth=3, fill='white')
+Line(345, 102, 345, 130, lineWidth=3, fill='white')
+Label('Hotel',315, 102, font='grenze', size=40, fill='red', bold=True)
+# Building 4
+Rect(176,74,84,400,fill=rgb(70,70,70), borderWidth=2, border=rgb(40,40,40))
+# Windows
+#42
+Line(204, 84, 204, 400, dashes=(10, 10), lineWidth=22, fill=rgb(241, 247, 49))
+Line(232, 84, 232, 400, dashes=(10, 10), lineWidth=22, fill=rgb(241, 247, 49))
+# Building 3
+Rect(113,160,83,310,fill=rgb(70,70,70), borderWidth=2, border=rgb(40,40,40))
+# Cracks
+Line(113, 160, 129, 174)
+Line(129, 174, 124, 190)
+Line(124, 190, 135, 196)
+#
+Line(196, 234, 185, 253)
+Line(185, 253, 189, 260)
+#
+Line(113, 341, 124, 329)
+Line(124, 329, 133, 328)
+#
+Line(196, 307, 190, 317, lineWidth=0.8)
+Line(190, 317, 181, 318, lineWidth=0.8)
+Line(181, 318, 177, 329, lineWidth=0.8)
+#
+Line(113, 367, 122, 378, lineWidth=0.8)
+Line(122, 378, 132, 381, lineWidth=0.8)
+Line(132, 381, 141, 390, lineWidth=0.8)
+#
+Line(113, 301, 125, 306, lineWidth=0.6)
+Line(125, 306, 132, 306, lineWidth=0.6)
+#
+Line(196, 210, 185, 213, lineWidth=0.6)
+Line(185, 213, 186, 217, lineWidth=0.6)
+Line(186, 217, 179, 220, lineWidth=0.6)
+# Windows
+Rect(154, 173, 30, 30)
+Rect(124, 218, 30, 30)
+Rect(138, 270, 30, 30)
+Rect(150, 350, 30, 30)
+# Boards
+Line(130, 290, 169, 262, lineWidth=12, fill='brown')
+Circle(134, 287, 3, fill='gray')
+Circle(164, 266, 3, fill='gray')
+Line(156, 342, 175, 385, lineWidth=12, fill='brown')
+Circle(158, 347, 3, fill='gray')
+Circle(172, 379, 3, fill='gray')
+Line(119, 239, 164, 220, lineWidth=12, fill='brown')
+Circle(123, 239, 3, fill='gray')
+Circle(158, 223, 3, fill='gray')
+Line(159, 170, 175, 211, lineWidth=12, fill='brown')
+Circle(160, 174, 3, fill='gray')
+Circle(171, 205, 3, fill='gray')
+Line(142, 372, 185, 344, lineWidth=12, fill='brown')
+Circle(145, 370, 3, fill='gray')
+Circle(179, 349, 3, fill='gray')
+Line(178, 288, 129, 268, lineWidth=12, fill='brown')
+Circle(168, 286, 3, fill='gray')
+Circle(135, 271, 3, fill='gray')
+Line(162, 242, 126, 213, lineWidth=12, fill='brown')
+Circle(157, 239, 3, fill='gray')
+Circle(130, 217, 3, fill='gray')
+Line(189, 190, 150, 188, lineWidth=12, fill='brown')
+Circle(155, 188, 3, fill='gray')
+Circle(182, 192, 3, fill='gray')
+# Building 6
+Rect(350,180,50,300,fill=rgb(70,70,70), borderWidth=2, border=rgb(40,40,40))
+# Windows
+Line(375, 190, 375, 400, dashes=(10, 10), lineWidth=30, fill=rgb(235, 237, 49))
+
+Rect(0,0,400,400,fill=None)
+Rect(0,0,400,400,fill=None)
+Rect(0,0,400,400,fill=None)
+Rect(0,0,400,400,fill=None)
+Rect(0,0,400,400,fill=None)
+Rect(0,0,400,400,fill=None)
+Rect(0,0,400,400,fill=None)
+Rect(0,0,400,400,fill=None)
+Rect(0,0,400,400,fill=None)
+Rect(0,0,400,400,fill=None)
+Rect(0,0,400,400,fill=None)
+Rect(0,0,400,400,fill=None)
+Rect(0,0,400,400,fill=None)
+Rect(0,0,400,400,fill=None)
+Rect(0,0,400,400,fill=None)
+Rect(0,0,400,400,fill=None)
+Rect(0,0,400,400,fill=None)
+Rect(0,0,400,400,fill=None)
+Rect(0,0,400,400,fill=None)
+Rect(0,0,400,400,fill=None)
+Rect(0,0,400,400,fill=None)
+Rect(0,0,400,400,fill=None)
+Rect(0,0,400,400,fill=None)
+Rect(0,0,400,400,fill=None)
+Rect(0,0,400,400,fill=None)
+Rect(0,0,400,400,fill=None)
+Rect(0,0,400,400,fill=None)
+Rect(0,0,400,400,fill=None)
+Rect(0,0,400,400,fill=None)
+Rect(0,0,400,400,fill=None)
+Rect(0,0,400,400,fill=None)
+Rect(0,0,400,400,fill=None)
+Rect(0,0,400,400,fill=None)
+Rect(0,0,400,400,fill=None)
+Rect(0,0,400,400,fill=None)
+Rect(0,0,400,400,fill=None)
+Rect(0,0,400,400,fill=None)
+Rect(0,0,400,400,fill=None)
+Rect(0,0,400,400,fill=None)
+Rect(0,0,400,400,fill=None)
